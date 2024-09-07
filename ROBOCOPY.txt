@@ -1,0 +1,10 @@
+ROBOCOPY C:\SourceFolder D:\DestinationFolder /E /COPY:DAT /R:5 /W:10 /LOG:C:\Logs\RobocopyLog.txt
+
+Breakdown of the command:
+C:\SourceFolder: The source directory you want to copy from.
+D:\DestinationFolder: The destination directory where files will be copied.
+/E: Copies all subdirectories, including empty ones.
+/COPY:DAT: Specifies what to copy (D=data, A=attributes, T=timestamps).
+/R:5: Retries the copy operation 5 times in case of failure.
+/W:10: Waits 10 seconds between retries.
+/LOG:C:\Logs\RobocopyLog.txt: Creates a log file at the specified path to track the operation details.
